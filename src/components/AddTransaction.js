@@ -27,6 +27,7 @@ export const AddTransaction = () => {
           <label htmlFor="text">Text</label>
           <input
             type="text"
+            required
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder="Enter text..."
@@ -39,6 +40,7 @@ export const AddTransaction = () => {
           </label>
           <input
             type="number"
+            required
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
             placeholder="Enter amount..."
