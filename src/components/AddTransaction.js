@@ -10,6 +10,10 @@ export const AddTransaction = () => {
   const onSubmit = (e) => {
     e.preventDefault();
 
+    if (+amount === 0) {
+      alert("Please Enter Correct Value");
+      return false;
+    }
     const newTransition = {
       id: Math.floor(Math.random() * 100000000),
       text,
